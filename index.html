@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="移动.css/reset.min.css">
+    <link rel="stylesheet" href="移动.css/index.css">
+    <script>
+        (function () {
+            function computed() {
+                // 获取屏幕的宽度
+                var win = document.documentElement.clientWidth || document.body.clientWidth;
+                // 设计稿的尺寸
+                var des = 640;
+                // 如果屏幕的宽度>=设计稿的尺寸，我们
+                if (win >= des) {
+                    document.documentElement.style.fontSize ="100px";
+                    return;
+                }
+                document.documentElement.style.fontSize = win / des * 100 + "px";
+            }
+            computed();
+            window.onresize=function(){
+              computed();
+            }
+
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <a  class="logo" href=""></a>
+        <a href="" class="menu"></a>
+    </header>
+    <section class="banner"></section>
+     <section class="biaoti">
+        <img src="images/book.png" alt="">
+        <h3>全部课程</h3>
+     </section>
+  
+    <ul class="lists">
+        <li>
+            <a href="">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <span>￥599.00元</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <span>￥599.00元</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <span>￥599.00元</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <span>￥599.00元</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <span>￥599.00元</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p>Vue.js从理论精讲到项目实战课程</p>
+                <span>￥599.00元</span>
+            </a>
+        </li>
+         
+    </ul>
+    <footer>
+        <a href="">
+            <img src="images/preson2.png" alt=""> <h6>首页</h6>
+        </a>
+        <a href="">
+            <img src="images/subject2.png" alt=""> <h6>我的课程</h6>
+        </a>
+        <a href="">
+            <img src="images/index2.png" alt=""> <h6>个人中心</h6>
+        </a>
+        
+    </footer>
+
+</body>
+</html>
